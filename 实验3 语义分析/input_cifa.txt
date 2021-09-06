@@ -1,0 +1,3 @@
+int a,b,c;
+if(a>c){a = b+c;};
+else{c = a+b;};

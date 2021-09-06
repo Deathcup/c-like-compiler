@@ -1,0 +1,2 @@
+check();
+add(a,b);

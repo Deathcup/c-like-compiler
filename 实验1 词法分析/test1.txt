@@ -1,0 +1,36 @@
+int a;
+int a,b;
+int a = 0x1;
+
+a = b + 1;
+a = b + c;
+
+a = 1;
+
+a = (b==c);
+a = (b>c);
+a = (b<c);
+
+a = (b&&c);
+a = (b||c);
+a = (!b);
+
+if(a==b)
+{
+
+};
+
+while(a==b)
+{
+
+};
+get(a);
+put(a);
+ if else
+if(a==b)
+{
+
+};
+else
+{
+};

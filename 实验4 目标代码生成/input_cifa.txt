@@ -1,0 +1,6 @@
+int a,b,c;
+while(a>c){
+if(a>b){
+    b=a;
+};
+};

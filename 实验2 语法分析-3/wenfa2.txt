@@ -1,0 +1,56 @@
+S -> id = U ; W
+S -> Y W
+S -> Z W
+W -> S
+W -> @
+U -> V UU
+UU -> | V UU
+UU -> @
+V -> E VV
+VV -> & E VV
+VV -> @
+E -> T EE
+EE -> + T EE
+EE -> - T EE
+EE -> @
+T -> F TT
+TT -> * F TT
+TT -> / F TT
+TT -> @
+F -> ( U )
+F -> num
+F -> id
+Y -> int X ;
+Y -> bool X ;
+Y -> get ( X ) ;
+Y -> put ( X ) ;
+Y -> id ( X ) ;
+X -> id XX
+XX -> , X
+XX -> @
+Z -> if ( A ) { S } K ;
+Z -> while ( A ) { S } ;
+K -> else { S } ;
+K -> @
+A -> B AA
+AA -> || B AA
+AA -> @
+B -> C BB
+BB -> && C BB
+BB -> @
+C -> D CC
+CC -> == D CC
+CC -> = = D CC
+CC -> <> D CC
+CC -> @
+D -> P DD
+DD -> > P DD
+DD -> >= P DD
+DD -> < P DD
+DD -> <= P DD
+DD -> @
+P -> Q
+P -> ! Q
+Q -> ( A )
+Q -> num
+Q -> id

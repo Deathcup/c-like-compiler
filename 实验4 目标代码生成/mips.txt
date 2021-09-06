@@ -1,0 +1,15 @@
+li $k1,1
+loop1:
+slt $t0,$s3,$s1
+loop2:
+beq $t0,$zero,loop7
+loop3:
+slt $t1,$s2,$s1
+loop4:
+beq $t1,$zero,loop6
+loop5:
+add $s2,$s1,$zero
+loop6:
+beq $zero,$zero,loop1
+loop7:
+syscall
